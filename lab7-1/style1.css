@@ -1,0 +1,250 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #222629;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+#shapka{
+    text-align: center;
+    width: 100%;
+}
+#shapka img{
+    min-width: 10%;
+    max-width: 100%;
+}
+#ruki{
+    width: 100%;
+}
+nav{
+    display: flex;
+    padding: 0;
+    margin-top: -3px;
+}
+nav a{
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #86C232;
+    padding: 15px;
+    color: #474B4F;
+}
+a .rt1, .rt2, .rt3, .rt4{
+    border-left: 2px #222629 solid;
+}
+nav a:hover{
+    background-color: #61892F;
+}
+.slider1{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    background-color: #474B4F;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10% 10% 10% 10%;
+}
+.cartinka1{
+    text-align: center;
+    width: 45%;
+    padding: 2%;
+}
+h2{
+    color: #61892F;
+}
+.text1{
+    width: 55%;
+    padding: 5%;
+    margin: 3%;
+    border-radius: 15% 25% 15% 25%;
+    background-color: #6B6E70;
+    color: #AAABB8;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.text1 > p{
+    vertical-align: middle;
+    text-align: left;
+    font-size: 27px;
+}
+.jone{
+    border-radius: 25% 15% 25% 15%;
+    width: 100%;
+}
+.proverka1{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url(Джон.avif);
+    background-position:center top;
+    background-size: cover;
+    border-radius: 25% 15% 25% 15%;
+}
+.proverka2{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url(Devon.jpg);
+    background-position:center top;
+    background-size: cover;
+    border-radius: 25% 15% 25% 15%;
+}
+.proverka3{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url(Levan.jpg);
+    background-position:center center;
+    background-size: cover;
+    border-radius: 25% 15% 25% 15%;
+}
+.proverka4{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url(Laletin.jpg);
+    background-position:center center;
+    background-size: cover;
+    border-radius: 25% 15% 25% 15%;
+}
+.proverka5{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url(Voevoda.jpg);
+    background-position:center center;
+    background-size: cover;
+    border-radius: 25% 15% 25% 15%;
+}
+#new-sect{
+    display: flex;
+    flex-direction: column;
+}
+.tr1{
+    height: 200px;
+    background-color: #474B4F;
+}
+.tr2{
+    height: 200px;
+    background-color: #474B4F;
+}
+footer{
+    width: 100%;
+    height: min-content;
+}
+#foot1{
+    text-align: center;
+    vertical-align: top;
+    background-color: #6B6E70;
+}
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider1 {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    vertical-align: middle;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+.subscription {
+    background-color: #474B4F;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subscription form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscription input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.subscription button {
+    background-color: #86C232;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscription button:hover {
+    background-color: #61892F;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    .slider1 {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .cartinka1, .text1 {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .text1 > p {
+        font-size: 20px;
+    }
+
+    button.prev, button.next {
+        top: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .text1 > p {
+        font-size: 16px;
+    }
+
+    .slider1 {
+        margin: 10px;
+    }
+
+    .subscription input[type="email"] {
+        width: 200px;
+    }
+}
